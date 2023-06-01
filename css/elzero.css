@@ -376,6 +376,8 @@ ul {
 .gallery .box .image {
   position: relative;
   overflow: hidden;
+  width: 100%;
+  height: 100%;
 }
 .gallery .box .image::before {
   content: "";
@@ -393,7 +395,9 @@ ul {
   animation: flashing 0.7s;
 }
 .gallery .box img {
-  max-width: 100%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
   transition: var(--main-transition);
 }
 .gallery .box .image:hover img {
